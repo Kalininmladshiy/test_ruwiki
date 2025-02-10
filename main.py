@@ -32,10 +32,10 @@ def main(page_title: str = None, file_path: str = None):
     """Основная функция для обработки WikiText и генерации краткого содержания."""
     env = Env()
     env.read_env()
-    giga_chat_authorization_key = env("GIGA_CHAT_AUTHORIZATION_KEY")
-    scope = env("SCOPE_GIGACHAIN")
+    giga_chat_authorization_key = env("GIGA_CHAT_AUTHORIZATION_KEY", None)
+    scope = env("SCOPE_GIGACHAIN", None)
 
-    open_ai_key = env("OPENAI_API_KEY")
+    open_ai_key = env("OPENAI_API_KEY", None)
 
     model_llm = env('LLM_MODEL')
 
