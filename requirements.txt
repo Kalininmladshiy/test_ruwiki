@@ -1,0 +1,10 @@
+mwclient==0.11.0
+langchain==0.3.18
+langgraph==0.2.70
+langchain-community==0.3.17
+langchain-openai==0.3.4
+langchain_ollama==0.2.3
+langchain-core~=0.3.34
+loguru==0.7.3
+langchain-gigachat==0.3.4
+ environs==14.1.0
